@@ -12,7 +12,6 @@ collections:
     folder: _products
     create: true
     slug: "{{slug}}"
-    format: md
     editor:
       preview: false
     fields:
