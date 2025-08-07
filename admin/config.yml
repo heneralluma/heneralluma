@@ -12,7 +12,7 @@ collections:
     folder: _products
     create: true
     slug: "{{slug}}"
-    format: yaml
+    format: md
     editor:
       preview: false
     fields:
