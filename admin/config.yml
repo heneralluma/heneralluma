@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: your-username/your-repo
+  name: git-gateway
+  repo: heneralluma/heneralluma
   branch: main
 
 media_folder: "static/uploads"
@@ -35,3 +35,15 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Color", name: "color", widget: "color" }
           - { label: "Image", name: "image", widget: "image" }
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: _pages
+    create: true
+    slug: "{{slug}}"
+    format: yaml
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body_markdown", widget: "markdown" }
