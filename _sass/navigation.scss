@@ -16,7 +16,8 @@ header {
 	color: #fff;
 	padding: 20px 0 59px 0;
 	background: linear-gradient(135deg, $brand-color 0%, $brand-color-2 100%);
-	position: relative;
+	background-image: url('/images/hero/hero.jpg');
+	position: sticky;
 
 	p {
 		margin: 0;
