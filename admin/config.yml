@@ -36,7 +36,6 @@ collections:
   - name: pages
     label: Pages
     label_singular: Page
-    folder: _pages
     create: true
     slug: "{{slug}}"
     format: yaml
