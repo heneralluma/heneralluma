@@ -7,7 +7,7 @@ description: >-
 
 
   Slim Fit, 5oz 100% Cotton T-Shirt.
-garment_type:
+leather_type:
 price: '9.00'
 sku: lion
 stock: 10
