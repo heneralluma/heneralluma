@@ -49,7 +49,7 @@ collections:
        
       # Branding / SEO
       - { label: "Logo Path", name: "logo", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" 
+      - { label: "Description", name: "description", widget: "text" }
       # Author Info
       - label: "Author"
         name: "author"
