@@ -45,16 +45,7 @@ collections:
         fields:
           # ---- Site ----
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Site URL", name: "url", widget: "string" }
-          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
-          - { label: "Google Analytics Key", name: "google_analytics_key", widget: "string", required: false }
-          - { label: "Google Maps API Key", name: "google_maps_javascript_api_key", widget: "string", required: false }
-          - { label: "Snipcart Key", name: "snipcart_key", widget: "string", required: false }
-          - { label: "Snipcart Currency", name: "snipcart_currency", widget: "string", required: false }
-
-          # SEO / Branding
-          - { label: "Logo Path", name: "logo", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
+        
 
           # Author Info
           - label: "Author"
