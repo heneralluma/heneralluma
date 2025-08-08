@@ -2,10 +2,99 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images"     # where uploaded files go in the repo
+public_folder: "/images"   # how they’re referenced in the site
 
 collections:
+  # --- Site Settings: edit _config.yml ---
+  - name: settings
+    label: "Site Settings"
+    editor:
+      preview: false
+    delete: false
+    files:
+      - label: "Jekyll Config"
+        name: "jekyll_config"
+        file: "_config.yml"
+        format: "yml"
+        fields:
+          - { label: "Google Analytics Key", name: "google_analytics_key", widget: "string", required: false }
+          - label: "Plugins"
+            name: "plugins"
+            widget: "list"
+            field: { label: "Plugin", name: "plugin", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Site URL", name: "url", widget: "string" }
+          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Description", name: "description", widget: "string" }
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Social"
+            name: "social"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                field: { label: "Link", name: "link", widget: "string" }
+          - label: "Social Icons"
+            name: "social_icons"
+            widget: "list"
+            field: { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Permalink Style", name: "permalink", widget: "string" }
+          - label: "Defaults"
+            name: "defaults"
+            widget: "list"
+            fields:
+              - label: "Scope"
+                name: "scope"
+                widget: "object"
+                fields:
+                  - { label: "Path", name: "path", widget: "string", required: false }
+                  - { label: "Type", name: "type", widget: "string", required: false }
+              - label: "Values"
+                name: "values"
+                widget: "object"
+                fields:
+                  - { label: "Layout", name: "layout", widget: "string" }
+          - label: "Collections"
+            name: "collections"
+            widget: "object"
+            fields:
+              - label: "Staff Members"
+                name: "staff_members"
+                widget: "object"
+                fields:
+                  - { label: "Output", name: "output", widget: "boolean" }
+              - label: "Products"
+                name: "products"
+                widget: "object"
+                fields:
+                  - { label: "Output", name: "output", widget: "boolean" }
+          - label: "Jekyll Archives"
+            name: "jekyll-archives"
+            widget: "object"
+            fields:
+              - label: "Enabled"
+                name: "enabled"
+                widget: "list"
+                field: { label: "Archive Type", name: "type", widget: "string" }
+          - { label: "Timezone", name: "timezone", widget: "string", required: false }
+          - label: "Exclude"
+            name: "exclude"
+            widget: "list"
+            field: { label: "File/Dir", name: "item", widget: "string" }
+
+  # --- Products content ---
   - name: products
     label: Products
     label_singular: Product
@@ -14,18 +103,19 @@ collections:
     slug: "{{slug}}"
     editor:
       preview: false
+    extension: "md"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description_markdown", widget: "markdown" }
+      - { label: "Description", name: "body", widget: "markdown" }
       - { label: "Leather Type", name: "leather_type", widget: "string", required: false }
       - { label: "Price", name: "price", widget: "string" }
-      - { label: "SKU", name: "sku", widget: "string" }
-      - { label: "Stock", name: "stock", widget: "number" }
+      - { label: "SKU", name: "sku", widget: "string", required: false }
+      - { label: "Stock", name: "stock", widget: "number", required: false }
       - label: "Sizes"
         name: "sizes"
         widget: "list"
         field:
-          { label: "Size", name: "", widget: "string" }
+          { label: "Size", name: "size", widget: "string" }
       - label: "Styles"
         name: "styles"
         widget: "list"
@@ -33,5 +123,3 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Color", name: "color", widget: "color" }
           - { label: "Image", name: "image", widget: "image" }
-  
-   
