@@ -35,43 +35,52 @@ collections:
           - { label: "Image", name: "image", widget: "image" }
   
    
-  - name: "site_config"
-    label: "Config"
-    
-    file: "_config.yml"
-    editor:
-      preview: false
-    fields:
-      # ---- Site ----
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Site URL", name: "url", widget: "string" }
-      - { label: "Base URL", name: "baseurl", widget: "string", required: false }
-       
-      # Branding / SEO
-      - { label: "Logo Path", name: "logo", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      # Author Info
-      - label: "Author"
-        name: "author"
-        widget: "object"
+   collections:
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
+      - label: "Config"
+        name: "jekyll_config"
+        file: "_config.yml"
+        editor:
+          preview: false
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Facebook", name: "facebook", widget: "string" }
-          - { label: "Instagram", name: "instagram", widget: "string" }
-      # Social Links
-      - label: "Social"
-        name: "social"
-        widget: "list"
-        fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - label: "Links"
-            name: "links"
+          # ---- Site ----
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Site URL", name: "url", widget: "string" }
+          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
+          - { label: "Google Analytics Key", name: "google_analytics_key", widget: "string", required: false }
+          - { label: "Google Maps API Key", name: "google_maps_javascript_api_key", widget: "string", required: false }
+          - { label: "Snipcart Key", name: "snipcart_key", widget: "string", required: false }
+          - { label: "Snipcart Currency", name: "snipcart_currency", widget: "string", required: false }
+
+          # SEO / Branding
+          - { label: "Logo Path", name: "logo", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+          # Author Info
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Twitter", name: "twitter", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+
+          # Social Links
+          - label: "Social"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                field: { label: "URL", name: "url", widget: "string" }
+
+          # Social Icons
+          - label: "Social Icons"
+            name: "social_icons"
             widget: "list"
-            field: { label: "URL", name: "url", widget: "string" }
-      # Social Icons
-      - label: "Social Icons"
-        name: "social_icons"
-        widget: "list"
-        field: { label: "Icon Name", name: "icon", widget: "string" }
+            field: { label: "Icon Name", name: "icon", widget: "string" }
