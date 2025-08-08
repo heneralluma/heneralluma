@@ -13,7 +13,8 @@ collections:
       preview: false
     delete: false
     files:
-      
+      - label: "Jekyll Config"
+        name: "jekyll_config"
         file: "_config.yml"
         format: "yml"
         fields:
