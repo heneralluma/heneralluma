@@ -4,10 +4,8 @@ plugins:
   - jekyll-seo-tag
 title: HENERAL LUMA
 url: https://heneralluma.store/
-baseurl: null
-google_maps_javascript_api_key: null
-snipcart_key: NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw
-snipcart_currency: usd
+baseurl: 
+ 
 logo: /images/icon.jpg
 description: Handcrafted Leathergoods
 author:
