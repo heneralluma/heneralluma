@@ -37,7 +37,7 @@ collections:
    
   - name: "site_config"
     label: "Config"
-    name: "config"
+    
     file: "_config.yml"
     editor:
       preview: false
