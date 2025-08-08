@@ -1,71 +1,24 @@
-# ----
-# Site
-
+google_analytics_key: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 title: HENERAL LUMA
-url: "https://heneralluma.store/"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
-snipcart_currency: "usd"
-
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
+url: https://heneralluma.store/
+baseurl: null
+google_maps_javascript_api_key: null
+snipcart_key: NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw
+snipcart_currency: usd
+logo: /images/icon.jpg
 description: Handcrafted Leathergoods
 author:
   name: heneral
   email: heneral@gmail.com
-  twitter: fur # twitter username without the @ symbol
-  phone: "+63 917 123 4567"
+  twitter: heneralluma
+  phone: +63 917 123 4567
 social:
   name: Facebook2
   links:
     - https://www.facebook.com/HDLEATHERPH/
-
-# -----
-# Build
-timezone: Etc/UTC
-
-collections:
-  staff_members:
-    output: false
-  products:
-    output: true
-
-permalink: pretty
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-
-jekyll-archives:
-  enabled:
-    - categories
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
 social_icons:
   - Email
   - Facebook
@@ -77,3 +30,32 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: index.html
+    values:
+      layout: default
+collections:
+  staff_members:
+    output: false
+  products:
+    output: true
+jekyll-archives:
+  enabled:
+    - categories
+timezone: Etc/UTC
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
