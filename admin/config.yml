@@ -37,36 +37,36 @@ collections:
   - name: "site_settings"
     label: "Site Settings"
     
-   file: "_config.yml"
-   editor:
-     preview: false
-   fields:
-     # ---- Site ----
-     - { label: "Title", name: "title", widget: "string" }
-      # SEO / Branding
-     - { label: "Logo Path", name: "logo", widget: "string" }
-     - { label: "Description", name: "description", widget: "text"}
-     # Author Info
-     - label: "Author"
-       name: "author"
-       widget: "object"
-       fields:
-         - { label: "Name", name: "name", widget: "string" }
-         - { label: "Email", name: "email", widget: "string" }
-         - { label: "Twitter", name: "twitter", widget: "string" }
-         - { label: "Phone", name: "phone", widget: "string"}
-     # Social Links
-     - label: "Social"
-       name: "social"
-       widget: "object"
-       fields:
-         - { label: "Name", name: "name", widget: "string" }
-         - label: "Links"
-           name: "links"
-           widget: "list"
-           field: { label: "URL", name: "url", widget: "string"}
-     # Social Icons
-     - label: "Social Icons"
-       name: "social_icons"
-       widget: "list"
-       field: { label: "Icon Name", name: "icon", widget: "string" }
+    file: "_config.yml"
+    editor:
+      preview: false
+    fields:
+      # ---- Site ----
+      - { label: "Title", name: "title", widget: "string" }
+       # SEO / Branding
+      - { label: "Logo Path", name: "logo", widget: "string" }
+      - { label: "Description", name: "description", widget: "text"}
+      # Author Info
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Twitter", name: "twitter", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string"}
+      # Social Links
+      - label: "Social"
+        name: "social"
+        widget: "object"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            field: { label: "URL", name: "url", widget: "string"}
+      # Social Icons
+      - label: "Social Icons"
+        name: "social_icons"
+        widget: "list"
+        field: { label: "Icon Name", name: "icon", widget: "string" }
