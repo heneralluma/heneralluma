@@ -45,8 +45,11 @@ collections:
         fields:
           # ---- Site ----
           - { label: "Title", name: "title", widget: "string" }
+           # SEO / Branding
+          - { label: "Logo Path", name: "logo", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-          - { label: "Phone", name: "phone", widget: "string" }
+
+
           # Author Info
           - label: "Author"
             name: "author"
