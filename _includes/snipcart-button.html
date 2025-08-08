@@ -1,13 +1,10 @@
-<button class="snipcart-add-item"
-	data-item-id="{{ include.product.sku }}"
-	data-item-price="{{ include.product.price }}"
-	data-item-url="{{ include.product.url }}"
-	data-item-description="{{ include.product.description }}"
-	data-item-image="{{ include.product.styles.first.image }}"
-	data-item-name="{{ include.product.name }}"
-	data-item-custom1-name="Color"
-	data-item-custom1-options="{{ include.product.styles | map: 'name' | join: '|' }}"
-	data-item-custom2-name="Size"
-	data-item-custom2-options="Medium"
-	{% if include.text %}{{ include.text }}{% else %}Email to order{% endif %}
-></button>
+ 
+ 
+<div class="social-icons">
+ 
+	<p>To order, please choose one of the options below:</p>
+	<a href="mailto:{{ site.author.email }}" class="order-icon email-icon">{% include social-icon.html icon="Email" %}</a>
+	<a href="{{ site.author.facebook }}" class="order-icon facebook-icon">{% include social-icon.html icon="Facebook2" %}</a>
+	<a href="{{ site.author.instagram }}" class="order-icon instagram-icon">{% include social-icon.html icon="Instagram" %}</a>
+</div>
+ 

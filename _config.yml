@@ -12,24 +12,22 @@ logo: /images/icon.jpg
 description: Handcrafted Leathergoods
 author:
   name: heneral
-  email: heneral@gmail.com
-  twitter: heneralluma
+  email: handro@gmail.com
   phone: +63 917 123 4567
+  facebook: https://www.facebook.com/HDLEATHERPH/
+  instagram: https://www.instagram.com/heneral.luma_leathercraft/
 social:
   name: Facebook2
   links:
     - https://www.facebook.com/HDLEATHERPH/
+  name: Instagram
+  links:
+    - https://www.instagram.com/heneral.luma_leathercraft/
 social_icons:
   - Email
   - Facebook
-  - Google Plus
   - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+ 
 permalink: pretty
 defaults:
   - scope:
