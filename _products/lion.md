@@ -1,6 +1,6 @@
 ---
 name: Scar the Lion
-description_markdown: >-
+description: >-
   Scar the lion is always true to himself. The Mufasa tragedy was a slight
   blemish in what was otherwise a saint-like life.
 

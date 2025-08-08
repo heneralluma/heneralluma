@@ -1,6 +1,6 @@
 ---
 name: Sacha the Deer
-description_markdown: >-
+description: >-
   Sacha's elegant antlers have never been seen on such a beautiful t-shirt. Wear
   this majestic beast and feel all your problems float away.
 

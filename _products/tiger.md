@@ -1,6 +1,6 @@
 ---
 name: Gavin the Tiger
-description_markdown: >-
+description: >-
   Gavin the tiger was brought up vegan. His favorite meal is chickpea salad with
   a lemon juice dressing.
 

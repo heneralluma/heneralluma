@@ -1,6 +1,6 @@
 ---
 name: Todd the Hedgehog
-description_markdown: >-
+description: >-
   Todd the hedgehog may have a spiky exterior but his heart is made of gold.
   Unfortunately this weighs him down and makes it difficult for him to get
   around.
