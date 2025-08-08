@@ -33,17 +33,7 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Color", name: "color", widget: "color" }
           - { label: "Image", name: "image", widget: "image" }
-  - name: pages
-    label: Pages
-    label_singular: Page
-    create: true
-    folder: /
-    slug: "{{slug}}"
-    format: html
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body_markdown", widget: "markdown" }
+  
   - name: "site_settings"
     label: "Site Settings"
     files:
