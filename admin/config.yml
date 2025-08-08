@@ -45,7 +45,9 @@ collections:
         fields:
           # ---- Site ----
           - { label: "Title", name: "title", widget: "string" }
-                    # Author Info
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          # Author Info
           - label: "Author"
             name: "author"
             widget: "object"
