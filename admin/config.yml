@@ -36,48 +36,42 @@ collections:
   
    
   - name: "site_settings"
-    label: "Site Settings"
-    files:
-      - label: "Config"
-        name: "config"
-        file: "_config.yml"
-        folder: /
-        editor:
-          preview: false
+    label: "Config"
+    name: "config"
+    file: "_config.yml"
+    editor:
+      preview: false
+    fields:
+      # ---- Site ----
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Site URL", name: "url", widget: "string" }
+      - { label: "Base URL", name: "baseurl", widget: "string", required: false }
+       
+      # Branding / SEO
+      - { label: "Logo Path", name: "logo", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" 
+      # Author Info
+      - label: "Author"
+        name: "author"
+        widget: "object"
         fields:
-          # ---- Site ----
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Site URL", name: "url", widget: "string" }
-          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
-           
-          # Branding / SEO
-          - { label: "Logo Path", name: "logo", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-
-          # Author Info
-          - label: "Author"
-            name: "author"
-            widget: "object"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "Phone", name: "phone", widget: "string" }
-              - { label: "Facebook", name: "facebook", widget: "string" }
-              - { label: "Instagram", name: "instagram", widget: "string" }
-
-          # Social Links
-          - label: "Social"
-            name: "social"
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+      # Social Links
+      - label: "Social"
+        name: "social"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - label: "Links"
+            name: "links"
             widget: "list"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - label: "Links"
-                name: "links"
-                widget: "list"
-                field: { label: "URL", name: "url", widget: "string" }
-
-          # Social Icons
-          - label: "Social Icons"
-            name: "social_icons"
-            widget: "list"
-            field: { label: "Icon Name", name: "icon", widget: "string" }
+            field: { label: "URL", name: "url", widget: "string" }
+      # Social Icons
+      - label: "Social Icons"
+        name: "social_icons"
+        widget: "list"
+        field: { label: "Icon Name", name: "icon", widget: "string" }
