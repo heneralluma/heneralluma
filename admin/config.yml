@@ -18,11 +18,7 @@ collections:
         file: "_config.yml"
         format: "yml"
         fields:
-          - { label: "Google Analytics Key", name: "google_analytics_key", widget: "string", required: false }
-          - label: "Plugins"
-            name: "plugins"
-            widget: "list"
-            field: { label: "Plugin", name: "plugin", widget: "string" }
+          
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Site URL", name: "url", widget: "string" }
           - { label: "Base URL", name: "baseurl", widget: "string", required: false }
@@ -50,49 +46,8 @@ collections:
             name: "social_icons"
             widget: "list"
             field: { label: "Icon", name: "icon", widget: "string" }
-          - { label: "Permalink Style", name: "permalink", widget: "string" }
-          - label: "Defaults"
-            name: "defaults"
-            widget: "list"
-            fields:
-              - label: "Scope"
-                name: "scope"
-                widget: "object"
-                fields:
-                  - { label: "Path", name: "path", widget: "string", required: false }
-                  - { label: "Type", name: "type", widget: "string", required: false }
-              - label: "Values"
-                name: "values"
-                widget: "object"
-                fields:
-                  - { label: "Layout", name: "layout", widget: "string" }
-          - label: "Collections"
-            name: "collections"
-            widget: "object"
-            fields:
-              - label: "Staff Members"
-                name: "staff_members"
-                widget: "object"
-                fields:
-                  - { label: "Output", name: "output", widget: "boolean" }
-              - label: "Products"
-                name: "products"
-                widget: "object"
-                fields:
-                  - { label: "Output", name: "output", widget: "boolean" }
-          - label: "Jekyll Archives"
-            name: "jekyll-archives"
-            widget: "object"
-            fields:
-              - label: "Enabled"
-                name: "enabled"
-                widget: "list"
-                field: { label: "Archive Type", name: "type", widget: "string" }
-          - { label: "Timezone", name: "timezone", widget: "string", required: false }
-          - label: "Exclude"
-            name: "exclude"
-            widget: "list"
-            field: { label: "File/Dir", name: "item", widget: "string" }
+          
+         
 
   # --- Products content ---
   - name: products
