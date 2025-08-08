@@ -1,6 +1,6 @@
 ---
 name:
-garment_type: top
+leather_type: top
 price:
 sku:
 description:
