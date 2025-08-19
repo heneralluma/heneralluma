@@ -2,20 +2,20 @@ google_analytics_key: null
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-title: HENERAL LUMA
+title: HENERAL LUMA handcrafted leathergoods
 url: https://heneralluma.store/
-baseurl: ""
-
 logo: /images/icon.jpg
-description: Handcrafted Leathergoods
 author:
   name: heneral
-  email: handro@gmail.com
-  phone: "+63 917 123 4567"
+  email: henerallumaleathergoods@gmail.com
+  phone: "+639272236557"
   facebook: https://www.facebook.com/HDLEATHERPH/
   instagram: https://www.instagram.com/heneral.luma_leathercraft/
-
-# FIXED: list of objects
+social_icons:
+  - Email
+  - Facebook
+  - Instagram
+permalink: pretty
 social:
   - name: Facebook
     links:
@@ -23,13 +23,6 @@ social:
   - name: Instagram
     links:
       - https://www.instagram.com/heneral.luma_leathercraft/
-
-social_icons:
-  - Email
-  - Facebook
-  - Instagram
-
-permalink: pretty
 defaults:
   - scope:
       path: ""
@@ -44,20 +37,19 @@ defaults:
       path: index.html
     values:
       layout: default
-
 collections:
   staff_members:
     output: false
   products:
     output: true
-
 jekyll-archives:
   enabled:
     - categories
-
 timezone: Etc/UTC
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
+baseurl: ""
+description: Handcrafted Leathergoods
